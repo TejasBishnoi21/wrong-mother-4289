@@ -1,0 +1,61 @@
+
+
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    margin: auto;
+    background: rgba(0.5, 0.5, 0.5, 0.5);
+    z-index: 3;
+}
+
+.modal{
+    background-image: url("https://cdn.pixabay.com/photo/2017/08/11/01/37/back-to-school-2629361__340.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 60%;
+}
+
+.modal2{
+    width: 40%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    gap: 100px;
+}
+
+.textTag{
+    font-size: 60px;
+    font-weight: bold;
+    background: #00FF00;
+    background: radial-gradient(circle farthest-corner at center center, #00FF00 0%, #00FFFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ButtonStart{
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    background: #CF00C1;
+    background: radial-gradient(ellipse farthest-corner at center center, #CF00C1 0%, #F8B500 51%, #30FF19 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+
+.buttonDiv{
+    /* width: 70%; */
+    display: flex;
+    justify-content:flex-end;
+    align-items:flex-end;
+}
