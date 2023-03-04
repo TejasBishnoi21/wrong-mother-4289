@@ -1,11 +1,11 @@
-import React from 'react';
-import HomePage from './Pages/Home';
-
+import React from "react";
+import HomePage from "./Pages/Home";
+import Game from "./Pages/Game";
 
 function App() {
   return (
     <div className="App">
-      <HomePage/>
+      <Game />
     </div>
   );
 }
