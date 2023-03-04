@@ -1,15 +1,17 @@
 import React, { useState } from "react";
 import BackgroundImage from "react-background-image";
 import "./UserPage.css";
-import btnImg from "../Images/btnImg.png"
+import btnImg from "../Images/btnImg.png";
 
 const UserPage = () => {
   const [player1, setPlayer1] = useState("");
   const [player2, setPlayer2] = useState("");
 
   const playFunc = () => {
-    console.log("player1", player1);
-    console.log("player2", player2);
+    const players = { player1, player2 };
+    console.log(players);
+    
+    localStorage.setItem("gamePlayers", JSON.stringify(players));
     setPlayer1("");
     setPlayer2("");
   };
@@ -19,8 +21,8 @@ const UserPage = () => {
       <BackgroundImage
         placeholder="https://img.freepik.com/free-vector/battle-versus-vs-background-sports-game_1017-23766.jpg?w=900&t=st=1677843151~exp=1677843751~hmac=1916f15cc6e2ca1c50f17bd5dd4e086fe400b913ff2bca004b694f8d4e625844"
         src="https://img.freepik.com/free-vector/battle-versus-vs-background-sports-game_1017-23766.jpg?w=900&t=st=1677843151~exp=1677843751~hmac=1916f15cc6e2ca1c50f17bd5dd4e086fe400b913ff2bca004b694f8d4e625844"
-        className="UserBackground">
-
+        className="UserBackground"
+      >
         <div className="userImg">
           <div className="userDiv">
             <div className="userDetail">
@@ -34,8 +36,8 @@ const UserPage = () => {
                     alignContent: "center",
                     fontSize: "30px",
                     textAlign: "justify",
-                  }}>
-
+                  }}
+                >
                   <p style={{ color: "white", fontWeight: "bold" }}>
                     {" "}
                     Player1{" "}
@@ -75,12 +77,8 @@ const UserPage = () => {
             </div>
 
             <button onClick={() => playFunc()} className="buttonPlay">
-              <img
-                src={btnImg}
-                alt=""
-              />
+              <img src={btnImg} alt="" />
             </button>
-            
           </div>
           <div className="img">
             <img
