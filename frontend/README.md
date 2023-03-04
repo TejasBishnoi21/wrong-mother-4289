@@ -1,10 +1,10 @@
 
 
-## Welcome user, 
+# Welcome, 
 
-# This game is built on ReactJs and TypeScript And Motion Framer
+## This game is built on ReactJs and TypeScript And Motion Framer
 
-# The game is designed to enhance the learning curve of kids in mathematics 
+## The game is designed to enhance the learning curve of kids in mathematics 
 
 # This the Collabroative Project of 4 Members 
 1. Tejasvi Bishnoi
@@ -12,18 +12,18 @@
 3. Ranjan Kumar
 4. Aditya Singh Ghosh
 
-## Link for Visit
+# Link for Visit
 
 [Netlify link]()
 
 [Github Link]()
 
-##Some Images of Website 
+#Some Images of Website 
 
-# Home Page 
+## Home Page 
 
-# Get Players Name 
+## Get Players Name 
 
-# Game Panel
+## Game Panel
 
 
