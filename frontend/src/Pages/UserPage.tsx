@@ -4,6 +4,11 @@ import "./UserPage.css";
 import btnImg from "../Images/btnImg.png";
 import { useNavigate } from "react-router";
 
+// interface players {
+//   player1: String;
+//   player2: String;
+// }
+
 const UserPage = () => {
   const [player1, setPlayer1] = useState("");
   const [player2, setPlayer2] = useState("");
