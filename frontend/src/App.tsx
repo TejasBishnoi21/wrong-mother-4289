@@ -9,6 +9,7 @@ import Home from "./Pages/Home";
 import UserPage from "./Pages/UserPage";
 
 import { Route,Routes } from "react-router-dom";
+import Game from "./Pages/Game";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/user" element={<UserPage />} />
+          <Route path="/game" element={<Game />} />
         </Routes>
       </AnimatePresence>
     </div>

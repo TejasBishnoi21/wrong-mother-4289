@@ -1,0 +1,30 @@
+.inputBox{
+    /* border: 1px solid blue; */
+    padding: 10px;
+}
+.genBtn{
+    margin: auto;
+    cursor: pointer;
+    padding: 3%;
+    width: 80%;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.inputBox > input {
+    padding: 5%;
+    margin-top: 2%;
+    background-color: pink;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    border-radius: 10px;
+}
+.inputBox > button {
+    margin: auto;
+    cursor: pointer;
+    padding: 3%;
+    width: 100px;
+    margin-top: 10px;
+    border-radius: 10px;
+}

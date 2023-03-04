@@ -2,16 +2,19 @@ import React, { useState } from "react";
 import BackgroundImage from "react-background-image";
 import "./UserPage.css";
 import btnImg from "../Images/btnImg.png";
+import { useNavigate } from "react-router";
 
 const UserPage = () => {
   const [player1, setPlayer1] = useState("");
   const [player2, setPlayer2] = useState("");
+  const navigate = useNavigate()
 
   const playFunc = () => {
     const players = { player1, player2 };
     console.log(players);
     
     localStorage.setItem("gamePlayers", JSON.stringify(players));
+    navigate('/game')
     setPlayer1("");
     setPlayer2("");
   };
