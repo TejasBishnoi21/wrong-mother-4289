@@ -10,6 +10,7 @@
     margin: auto;
     background: rgba(0.5, 0.5, 0.5, 0.5);
     z-index: 3;
+    
 }
 
 .modal{
@@ -17,25 +18,33 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    height: 60%;
+    height: 60vh;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 .modal2{
-    width: 40%;
+    width: 45%;
+    height: 100%;
     margin: auto;
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
+    justify-content:flex-end;
     gap: 100px;
+    padding: 5px;
+    /* border: 1px solid blue; */
 }
 
 .textTag{
-    font-size: 60px;
+    font-size: 50px;
     font-weight: bold;
     background: #00FF00;
     background: radial-gradient(circle farthest-corner at center center, #00FF00 0%, #00FFFF 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+    /* border: 1px solid green; */
 }
 
 .ButtonStart{
@@ -43,19 +52,85 @@
     font-weight: bold;
     color: white;
     background-color: transparent;
-    border: none;
     padding: 10px;
     border-radius: 15px;
     background: #CF00C1;
     background: radial-gradient(ellipse farthest-corner at center center, #CF00C1 0%, #F8B500 51%, #30FF19 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     cursor: pointer;
+    border: none;
+    
+}
+.ButtonStart:hover{
+    transform: scale(1.08);
+    transition: all 0.1s linear;
+    cursor: pointer;
+    border: 2px solid #CF00C1;
 }
 
 .buttonDiv{
     /* width: 70%; */
     display: flex;
-    justify-content:flex-end;
-    align-items:flex-end;
+    justify-content:space-between;
+    padding: 10px;
+    align-items:center;
+    /* border: 1px solid red; */
+}
+
+@media all and (min-width:300px) and (max-width:450px){
+    .modal{
+        height: 50vh;
+        width: 80%;
+        margin: auto;
+    }
+    .modal2{
+        width: 100%;
+        height: 50%;
+    }
+    .textTag{
+        font-size: 30px;
+    }
+    .buttonDiv{
+        display: flex;
+        justify-content:space-between;
+        padding: 0px;
+        align-items:center;
+        width: 100%;
+        height: 40px;
+    }
+    .ButtonStart{
+        font-size: 30px;
+        padding: 5px;
+    }
+}
+
+@media all and (min-width:451px) and (max-width:850px){
+    .modal{
+        width: 85%;
+        margin: auto;
+        margin: auto;
+        
+    }
+    .modal2{
+        width: 100%;
+        height: 50%;
+        
+    }
+    .textTag{
+        font-size: 40px;
+    }
+    .buttonDiv{
+        display: flex;
+        justify-content:space-between;
+        padding: 0px;
+        align-items:center;
+        width: 100%;
+        height: 40px;
+    }
+    .ButtonStart{
+        font-size: 40px;
+        padding: 5px;
+    }
 }

@@ -14,24 +14,13 @@ import "react-jinke-music-player/assets/index.css";
 const HomePage = () => {
  const [showModal, setShowModal] = useState(false);
   useEffect(() => {
-    setTimeout(() => setShowModal(true), 2000);
+    setTimeout(() => setShowModal(true), 1000);
   }, [setShowModal]);
 
 
   return (
     <div className="main">
-            {/* <audio id="track">
-                <source src="https://www.bensound.com/bensound-music/bensound-moose.mp3" type="audio/mpeg" />
-            </audio> */}
-              {/* <AbsoluteFill>
-              <Audio src={audio} />
-                </AbsoluteFill> */}
-        {/* <ReactJkMusicPlayer quietUpdate 
-        clearPriorAudioLists
-        audioLists={audioLists}
-        autoPlay={true}
-        /> */}
-        {/* <ReactJkMusicPlayer locale={customLocale}/> */}
+      
       <BackgroundImage
         placeholder={placeholder}
         src={hdImage}

@@ -11,12 +11,23 @@
     position: relative;
     text-align: center;
     z-index: 3;
-    /* background: #26CF04;
-    background: radial-gradient(circle farthest-corner at center center, #26CF04 0%, #0FFFAF 25%, #1C2BFF 50%, #92FF70 75%, #00CF0E 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
     background: #25CC0F;
     background: radial-gradient(ellipse farthest-corner at center center, #25CC0F 0%, #9E3212 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+@media all and (min-width:300px) and (max-width:450px){
+    .some-class{
+        font-size: 40px;
+    }
+    
+}
+
+@media all and (min-width:451px) and (max-width:850px){
+    .some-class{
+        font-size: 65px;
+    }
+
 }

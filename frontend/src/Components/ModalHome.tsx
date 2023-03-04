@@ -1,12 +1,9 @@
 import React, { useState } from 'react';
 import {Link} from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-
-import BackgroundImage from "react-background-image";
-
-
 import "./ModalHome.css"
 import AnimatedText from './AnimatedText';
+import { SimplePlayer } from './AudioFile';
 
 const backdrop = {
     visible: { opacity: 1 },
@@ -28,25 +25,28 @@ const ModalHome = ({showModal,setShowModal} ) => {
     return (
      
         <AnimatePresence mode='wait'>
+          
          { showModal && (
-         
             <motion.div className="backdrop"
               variants={backdrop}
               initial="hidden"
               animate="visible"
-              exit="hidden"
-            >
+              exit="hidden">
+
+              {/* <SimplePlayer/> */}
+
               <motion.div className="modal"
                 variants={modal}>
                   <motion.div className="modal2">
-                      <AnimatedText text="Lets Go!" replay={replay} />
-                      <motion.div></motion.div>
-                      <motion.div></motion.div>
+                      {/* <motion.div></motion.div>
+                      <motion.div></motion.div> */}
                       <motion.div className='buttonDiv'>
+                      <AnimatedText text="Lets Go!" replay={replay} />
                         <Link to="/user">
                           <motion.button className='ButtonStart'>Start</motion.button>
                         </Link>
                       </motion.div>
+                      
                 </motion.div>
               </motion.div>
              
