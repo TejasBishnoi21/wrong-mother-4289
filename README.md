@@ -21,10 +21,11 @@
 #Some Images of Website 
 
 ## Home Page 
-![Screenshot (1052)](https://user-images.githubusercontent.com/103637436/223349208-befdb319-d82b-4c2a-889b-c8014565eb34.png)
+![Screenshot (1051)](https://user-images.githubusercontent.com/103637436/223349246-bfe79e8d-de3f-489e-9bce-96c58afdd106.png)
+
 
 ## Get Players Name 
-![Screenshot (1051)](https://user-images.githubusercontent.com/103637436/223349246-bfe79e8d-de3f-489e-9bce-96c58afdd106.png)
+![Screenshot (1052)](https://user-images.githubusercontent.com/103637436/223349208-befdb319-d82b-4c2a-889b-c8014565eb34.png)
 
 ## Game Panel
 ![Screenshot (1053)](https://user-images.githubusercontent.com/103637436/223349252-1c64bb44-8289-4118-b70f-1d882df00697.png)
